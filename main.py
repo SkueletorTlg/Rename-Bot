@@ -58,10 +58,10 @@ async def rename_handler(bot: Client, event: Message):
         return
     isInGap, t_ = await CheckTimeGap(user_id=event.from_user.id)
     if (Config.ONE_PROCESS_ONLY is False) and (isInGap is True):
-        await event.reply_text(f"Lo siento señor, \n¡No se permiten inundaciones!\nEnvíe el video después `{str(t_)}s`", quote=True)
+        await event.reply_text(f"Lo siento señor, \n¡No se permiten inundaciones!\nEnvíe el video después `{str(t_)}s`", quote=False)
         return
     elif (Config.ONE_PROCESS_ONLY is True) and (isInGap is True):
-        await event.reply_text(f"Lo siento señor,\n¡No se permiten inundaciones!\n{t_}", quote=True)
+        await event.reply_text(f"Lo siento señor,\n¡No se permiten inundaciones!", quote=False)
         return
     media = event.video or event.audio or event.document
     if media and media.file_name:
