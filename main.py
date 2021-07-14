@@ -43,7 +43,7 @@ async def start_handler(bot: Client, event: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("🍃 AsAEcos", url="https://t.me/AsAEcos"),
-                 InlineKeyboardButton("❤️ Califícame", url="https://t.me/tlgrmcbot?start=renamearchive_bot-review")],
+                 InlineKeyboardButton("Califícame ❤️", url="https://t.me/tlgrmcbot?start=renamearchive_bot-review")],
                 [InlineKeyboardButton("👤 Soporte 👤", url="https://t.me/DKzippO")]
             ]
         )
