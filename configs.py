@@ -10,7 +10,7 @@ class Config(object):
     SESSION_NAME = os.environ.get("SESSION_NAME", "Rename-Bot-0")
     SLEEP_TIME = int(os.environ.get("SLEEP_TIME", 5))
     BOT_OWNER = os.environ.get("BOT_OWNER", 1445283714)
-    CAPTION = "Rename Bot by @{}\n\nMade by @AbirHasan2005"
+    CAPTION = "Bot creado por @DKzippO"
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -100))
     MONGODB_URI = os.environ.get("MONGODB_URI", "")
@@ -18,16 +18,10 @@ class Config(object):
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
     ONE_PROCESS_ONLY = bool(os.environ.get("ONE_PROCESS_ONLY", False))
     START_TEXT = """
-I am Telegram Files Rename Bot.
+mi principal función es renombrar archivos!
+    	    
+<b>¡Envíame cualquier archivo de Telegram para renombrarlo.</b>
 
-Send me a File to Rename.
-
-Made by @AbirHasan2005
+Escriba /help para más información.
     """
-    PROGRESS = """
-Percentage : {0}%
-Done: {1}
-Total: {2}
-Speed: {3}/s
-ETA: {4}
-    """
+    PROGRESS = """<b>📊 Porcentaje:</b>{0}%\n<b>✅ Hecho: {1}</b> <b>📁 Tamaño total:</b> {2}\n<b>🚀 Velocidad:</b> {3}/s\n<b>⌚️ Tiempo estimado:</b> {4}\n"""
