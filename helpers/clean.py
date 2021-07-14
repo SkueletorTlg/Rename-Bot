@@ -6,9 +6,9 @@ import shutil
 
 async def delete_all(root: str):
     """
-    Delete a Folder.
+    Eliminar una carpeta.
 
-    :param root: Pass Folder Path as String.
+    :param root: Pase la ruta de la carpeta como cadena.
     """
 
     try:
@@ -19,9 +19,9 @@ async def delete_all(root: str):
 
 async def delete_one(file: str):
     """
-    Try to Delete a Specific File.
+    Intente eliminar un archivo específico.
 
-    :param file: Pass File Path.
+    :param file: Pasar ruta de archivo.
     """
 
     try:
