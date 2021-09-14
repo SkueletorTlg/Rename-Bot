@@ -42,7 +42,7 @@ async def start_handler(bot: Client, event: Message):
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🍃 AsAEcos", url="https://t.me/AsAEcos"),
+                [InlineKeyboardButton("🎓 Cursos Pro Android", url="https://t.me/joinchat/VDY6seEnkeKdZNRM"),
                  InlineKeyboardButton("Califícame ❤️", url="https://t.me/tlgrmcbot?start=renamearchive_bot-review")],
                 [InlineKeyboardButton("👤 Soporte 👤", url="https://t.me/DKzippO")]
             ]
@@ -320,7 +320,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 text=f"**Prefijo actual:** `{current_prefix}`",
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("✏️ Establecer nuevo prefijo", callback_data="forceNewPrefix")],
+                        [InlineKeyboardButton("✏️ Establecer nuevo nombre", callback_data="forceNewPrefix")],
                         [InlineKeyboardButton("↩️ Atrás", callback_data="openSettings")]
                     ]
                 )
